@@ -1,4 +1,3 @@
-# inspect_carriers.py
 from payloads import build_payload, CARRIERS
 from run_tests import ask_model, score
 
