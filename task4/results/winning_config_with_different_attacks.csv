@@ -1,6 +1,0 @@
-carrier,directive,forged,copies,normal,uncertain,flagged_malicious,hijacked
-sqli,format,True,1,19,0,1,18
-path_traversal,format,True,1,20,0,0,14
-xss,format,True,1,19,0,1,20
-command_injection,format,True,1,18,1,1,16
-benign,format,True,1,20,0,0,15
