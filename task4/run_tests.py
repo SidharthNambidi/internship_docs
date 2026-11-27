@@ -64,7 +64,7 @@ if __name__ == "__main__":
         for carrier in CARRIERS:
             for directive in ["direct", "aligned", "format"]:
                 for forged in [False, True]:
-                    for copies in [1, 2]:
+                    for copies in [1, 2, 4, 8]:
                         res = run_experiment(carrier, directive, forged, copies, n=10)
                         row = [carrier, directive, forged, copies,
                                res["normal"], res["uncertain"], res["flagged_malicious"], res["hijacked"]]

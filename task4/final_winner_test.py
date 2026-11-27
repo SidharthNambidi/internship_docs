@@ -57,13 +57,13 @@ def run_experiment(carrier_key, directive_key, use_forged, copies, n=10):
     return results
 
 if __name__ == "__main__":
-    with open("results.csv", "w", newline="") as f:
+    with open("winner50_results.csv", "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["carrier", "directive", "forged", "copies", "normal", "uncertain", "flagged_malicious", "hijacked"])
 
         for carrier in CARRIERS:
             print(f"\n=== carrier: {carrier} ===")
-            res = run_experiment(carrier, "format", True, 1, n=20)
+            res = run_experiment(carrier, "format", True, 1, n=100)
             row = [carrier, "format", True, 1,
                    res["normal"], res["uncertain"], res["flagged_malicious"], res["hijacked"]]
             writer.writerow(row)
