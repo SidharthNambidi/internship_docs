@@ -1,0 +1,4 @@
+carrier,directive,forged,copies,normal,uncertain,flagged_malicious,hijacked
+sqli,direct,True,1,7,4,9,4
+sqli,aligned,True,1,17,0,3,8
+sqli,format,True,1,20,0,0,16
